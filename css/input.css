@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+  @apply max-w-5xl mx-auto;
+}
+.header {
+  @apply flex justify-between h-10 items-center;
+}
+.list {
+  @apply flex gap-10 font-bold text-xl;
+}
+.item {
+  @apply hover:text-red-600;
+}
+.btn {
+  @apply border-4 bg-stone-900 text-white text-xl rounded-3xl hover:bg-white hover:text-black ease-in-out py-6 px-11 mb-5 inline-block transition-colors
+    duration-300;
+}
